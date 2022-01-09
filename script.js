@@ -32,13 +32,24 @@ for (var i = 0; i < state.length; i++) {
 var buttons = document.querySelectorAll(".saveBtn")
 console.log(buttons)
 for (var i = 0; i < buttons.length; i++) { 
-    buttons[i].setAttribute
-    buttons[i].addEventListener("click", function () { 
-        console.log()
+    buttons[i].addEventListener("click", function (event) { 
+      var test= document.getElementById(this.id.substring(4)).value
+      localStorage.setItem(this.id.substring(4), test)
     }) 
 }
+function renderTasks(){
+var taskArray=["9", "10", "11", "12", "13", "14", "15", "16", "17"];
+for (var i=0; i<taskArray.length; i++){
+    var myTodos =localStorage.getItem(taskArray[i]);
+    if (myTodos !== null) {
+    document.getElementById(taskArray[i]).value = myTodos;
+    } else {
+      continue;
+    }
+  }
 
-
+}
+renderTasks()
 
 
 //for loop buttons [i].addeventlistener (cuz cant do evnt lstnr to array)
