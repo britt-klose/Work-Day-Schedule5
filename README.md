@@ -6,4 +6,9 @@ This Application allows the user to keep track of their day by the hour for a ty
 
 # Application
 Click the link to see page in use or view the following screenshot
-https://britt-klose.github.io/Work-Day-Schedule5/ 
+https://britt-klose.github.io/Work-Day-Schedule5/  
+
+![alt text](Images/2022-01-08(3).png)
+
+
+![alt text](Images/2022-01-08(4).png)
