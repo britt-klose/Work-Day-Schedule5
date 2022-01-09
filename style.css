@@ -6,7 +6,7 @@ body {
 
 textarea {
   background: transparent;
-  border: none;
+  border: 3px;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
@@ -43,17 +43,17 @@ textarea {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #837d7d;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #77b486;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #978cf5;
   color: white;
 }
 
@@ -68,4 +68,12 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.saveBtn:hover{
+  background-color: #64dcf7;
+}
+
+.saveBtn:active{
+  background-color: #64dcf7;
 }
