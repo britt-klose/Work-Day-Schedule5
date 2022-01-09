@@ -1,6 +1,6 @@
 //open with current date
 var currentDate= moment().format("dddd, MMMM Do YYYY");
-var currentHour=moment().format("kk");
+var currentHour=moment().format("HH");
 console.log(currentDate)
 console.log(currentHour)
 var hour=document.querySelectorAll(".hour")
@@ -13,11 +13,11 @@ document.getElementById("currentDay").textContent=currentDate
 
 //Ifs for past present future
 for (var i=0; i<state.length; i ++){
-    if (hour[i].textContent<currentHour){
+    if (hour[i].textContent.substring(0,2)<currentHour){
         state[i].setAttribute(
         "style", "background-color:gray"
     )
-    } else if (hour[i].textContent>currentHour){
+    } else if (hour[i].textContent.substring(0,2)>currentHour){
         state[i].setAttribute(
         "style", "background-color: blue"
     )} else {
